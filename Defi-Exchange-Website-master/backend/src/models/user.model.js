@@ -25,6 +25,10 @@ class UserModel {
     findOne = async (params) => {
         try {
             const { columnSet, values } = multipleColumnSet(params)
+
+             // Log columnSet and values to debug
+        console.log('ColumnSet:', columnSet);
+        console.log('Values:', values);
             
             const sql = `SELECT * FROM ${this.tableName}
             WHERE ${columnSet}`;

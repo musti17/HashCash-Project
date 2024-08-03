@@ -4,6 +4,8 @@
 -- ------------------------------------------------------
 -- Server version	8.0.27-0ubuntu0.20.04.1
 
+use mgldefi;
+
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
 /*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
@@ -210,7 +212,7 @@ CREATE TABLE `transaction` (
   `token` varchar(42) NOT NULL,
   `amount` float NOT NULL,
   `network` varchar(20) NOT NULL,
-  `to_admin` tinyint(1) NOT NULL
+  `to_admin` tinyint(1) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
